@@ -1,0 +1,35 @@
+[
+ {
+  "id": 1,
+  "name": "Pod descartable IGNITE 1500puf",
+  "price": 4200,
+  "description": "Pod descartable ignite de muchos sabores original de 1500puff",
+  "discount": 4200
+ },
+ {
+  "id": 2,
+  "name": "Sal Pod nasty",
+  "price": 4200,
+  "category": "Esencias y sales",
+  "description": "sal de nasty",
+  "discount": 20,
+  "image": "pod ignite 1500puff.png"
+ },
+ {
+  "id": 3,
+  "name": "Sal Pod nasty",
+  "price": 4200,
+  "category": "Esencias y sales",
+  "description": "sal de nasty",
+  "discount": 20,
+  "image": "pod ignite 1500puff.png"
+ },
+ {
+  "id": 4,
+  "name": "pendrive 500gb rojo",
+  "price": 222,
+  "description": "ffffff",
+  "discount": 222,
+  "image": "qqqqq.jpg"
+ }
+]

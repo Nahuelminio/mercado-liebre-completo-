@@ -1,0 +1,137 @@
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+
+ .contraseña {
+   text-align: center;
+   margin: 44px 0px 44px;
+   
+}
+#contraseña{
+    height: 36px;
+    width: 50%; 
+    border: 2px solid black;
+    border-radius: 8px
+    
+}
+.boton-inicio {
+    text-align: center;
+}
+.direccion{
+    text-align: center;
+    margin: 44px 0px 44px;
+}
+#direccion{
+    height: 36px;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 8px
+
+}
+.nombre{
+    text-align: center;
+   
+}
+#nombre{
+    height: 36px;
+    width: 50%; 
+    border: 2px solid black;
+    border-radius: 8px
+    
+}
+
+#correo{
+    height: 36px;
+    width: 50%; 
+    border: 2px solid black;
+    border-radius: 8px
+}
+.correo{
+    text-align: center;
+}
+
+#edad{
+    height: 36px;
+    width: 35%;  
+    border: 2px solid black;
+    border-radius: 8px
+}
+.nacimiento{
+    margin: 0px 0px 44px;
+    text-align: center;
+
+}
+.fecha-tex{
+    margin-top: 44px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 31%;
+}
+.perfil{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-decoration: underline #c9973b;
+    
+}
+#check1{
+  background-color: #c9973b;
+}
+.box-produc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#check1{
+    border:2px solid black;
+    border-radius: 8px
+}
+   .perfil-usuario{
+     width: 35%;
+     height: 34px;
+    margin: 44px auto 0;
+    
+   }
+   #pf{
+     font-size: small;
+     border: 2px solid black;
+   }
+
+
+
+
+
+
+
+
+
+
+#boton-div{
+    text-align: center;
+}
+
+#boton-enviar{
+    width: 50%; 
+   color:black;
+    border: 2px solid black;
+}
+
+#boton-crear{
+    width: 50%; 
+    color:black;
+     border: 2px solid black;
+
+}
+#olvide-contraseña{
+    margin-left: 43%;
+    margin-bottom: -4px;
+}
+#boton-olvide{
+    font-size: small;
+    text-decoration: underline;
+    color: black;
+}
