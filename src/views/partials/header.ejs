@@ -26,21 +26,31 @@
 
 
      <nav class="main-listas">
-      <div>
+      <div class="lista-izquierda">
        <ul class="lista-izq">
         <li><a href="#ofertas-titular"> Ofertas  </a></li>
         <li><a href="a"> Tiendas oficiales </a></li>
+        <% if (locals.isLogged) {  %>
         <li><a href="/product/create"> Vender </a></li>
+        <% } %>
         <li><a href="a"> Ayuda   </a></li>
        </ul>
       </div>
+      
   
-         <div>
+      <div class="lista-izquierda">
        <ul class="lista-derc" >
-        <li><a href="/users/register">  Creá tu cuenta  <i id="icono-header" class="fa-solid fa-address-card"></i></a> </li>
+        <% if (locals.isLogged) {  %>
+       <li> <a href="/users/logout">  Cerrar sesion <i id="icono-header" class="fa-solid fa-bag-shopping"></i> </a> </li>
+       <li><a href="/users/profile">  Perfil  <img class="imagen-perfil"src="/imagenes/avatar/<%= locals.userLogged[0].fotoPerfil %>"/></a> </li>
+       <% } else { %>   
+       <li><a href="/users/register">  Creá tu cuenta  <i id="icono-header" class="fa-solid fa-address-card"></i></a> </li>
         <li> <a href="/users/login">  Ingresá  <i id="icono-header" class="fa-solid fa-circle-user"></i></a> </li>
-        <li> <a href="a">  Mis compras <i id="icono-header" class="fa-solid fa-bag-shopping"></i> </a> </li>
-       </ul> 
+       <% } %>
+      </ul> 
       </div>
+      
+    
      </nav>
+   
   </header>

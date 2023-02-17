@@ -1,0 +1,26 @@
+[
+ {
+  "id": 1,
+  "fullName": "fiorella nuñez",
+  "password": "$2a$10$jR7Vp6M1/gaNPgcuzUSszueevsjL90t.98wsDcusG5VAdHLTF2RHS",
+  "email": "nahuelbenjamin2004@gmail.com",
+  "country": "argentina",
+  "fotoPerfil": "1673807816159.jpg"
+ },
+ {
+  "id": 2,
+  "fullName": "fiorella nuñez",
+  "password": "$2a$10$zfCbQw8c3FyaHff51mfjwONwSWeXWpIsSky1Td3msQI43lD23Qse6",
+  "email": "fionez@gmail.com",
+  "country": "argentina",
+  "fotoPerfil": "1673817408511.jpeg"
+ },
+ {
+  "id": 3,
+  "fullName": " nahuel miño",
+  "password": "$2a$10$H1XdC7V9s759nWUX7ONS.OiNWZZrpG7XCIIu5wdwvn0JI2Wg2/0Ia",
+  "email": "nahuelbenjamin04@gmail.com",
+  "country": "argentina",
+  "fotoPerfil": "1675457037144.jpg"
+ }
+]

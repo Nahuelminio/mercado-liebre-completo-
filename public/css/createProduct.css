@@ -1,0 +1,24 @@
+.input-nombre {
+    border-radius: 7px;
+    border: 1px solid black
+} 
+
+.input-descripcion{
+    border-radius: 7px;
+    border: 1px solid black
+}
+
+.input-precio{
+    border-radius: 7px;
+    border: 1px solid black
+}
+
+.input-descuento{
+    border-radius: 7px;
+    border: 1px solid black
+}
+
+.input-categoria{
+    border-radius: 7px;
+    border: 11px solid black
+}

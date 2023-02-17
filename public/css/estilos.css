@@ -99,11 +99,12 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 70%;
+    width: 90%;
     flex-wrap: wrap;
 }
 #cajaproductos #producto1{
-    
+   width: 17%;
+
    justify-content: center;
     margin: 0 63px
 }
@@ -111,7 +112,7 @@ body{
 
 .img01{
    width: 100%;
-   height: 272px;
+   height: 282px;
   
     
 }
@@ -249,9 +250,7 @@ footer{
 #producto1:hover  #camion{
    transform: rotate(90deg);
 }
-#producto1:hover .descripcion{
-    display: block;
-}
+
 
 .descripcion{
    display: none;
@@ -261,6 +260,9 @@ footer{
    transition: 2000ms;
    
    
+}
+.bordeimg:hover .descripcion{
+    display: block;
 }
 .footer-icon:hover {
     color: #c9973b;
@@ -365,6 +367,9 @@ footer{
     .barra-busqueda{
      width: 60%;
     }
+    .lista-izquierda{
+        margin-top: 17px
+        }
     .main-header-top-bar{
      display:flex ;
      justify-content: space-between;
@@ -515,9 +520,11 @@ footer{
          #publicidad{
             display: none;
          }
+         
  
 }
 @media only screen and (min-width: 1391px) {
+    
     
     .logo-completo{
         width: 300px;
@@ -559,7 +566,8 @@ footer{
         margin-right: 140px 
        }
        div .lista-izq{
-        margin-left: 140px 
+        margin-left: 140px;
+      
        }
        
 

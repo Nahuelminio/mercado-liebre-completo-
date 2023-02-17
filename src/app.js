@@ -1,12 +1,29 @@
 const express = require('express')
-const { read } = require('fs')
+
+const cookies = require('cookie-parser')
+const session = require ('express-session')
+const methodOverride = require('method-override')
+
 const path = require('path')
 const app=express()
-const routes = require('./routes/index.routes')
 
-const methodOverride = require('method-override')
+const routes = require('./routes/index.routes')
+const  userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
+
+
+
+
 app.use(methodOverride('_method'))
 
+app.use(session({
+    secret: "shh es un secreto",
+    resave: false,
+    saveUninitialized:false,
+}));
+
+app.use (cookies())
+
+app.use( userLoggedMiddleware)
 
 app.use(express.static(path.join(__dirname,'../public')))
 

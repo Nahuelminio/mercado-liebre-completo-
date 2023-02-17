@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <%- include ('../partials/head') %>
+
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/estilos.css" rel="stylesheet">
+    <link href="/css/perfil.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    
+     
+    <title >Dicons | Compra Online</title>
+</head>
+
+<body>
+<!-- Contenido del Header -->
+<!-- header -->
+<%- include ('../partials/header') %>
+<!-- /header -->
+
+    <main>
+        <br>
+        <div id="box-lista-de-opciones-datos">
+           
+            <div id="primera-lista" >
+                <!--usuario nuevo -->           
+                <div class="nombre-foto-1" >
+                <img class="foto-perfil"src="/imagenes/avatar/<%= users.fotoPerfil %>" style="margin-top:4px;">          
+                <h2 class="nombre-perfil"> <%= users.fullName %> </h2>
+                </div>
+            </div>
+         
+            <div id="segunda-lista">
+                <!--Mis datos --> 
+                <a href="x " class="boton-modificar-datos">
+                    <div class="nombre-foto">
+                        <i id="usuario-icono-2" class="fa-regular fa-circle-user"></i>
+                        <h3>Mis datos</h3>
+                    </div>
+                </a>
+                    
+                <!--Editar mis datos--> 
+                <a href="x" class="boton-modificar-datos">
+                    <div class="nombre-foto">
+                        <iconify-icon  id="icono-datos"icon="fa6-regular:pen-to-square"></iconify-icon>
+                        <h3>Modificar mis datos</h3>
+                    </div>
+                </a>
+
+                <!--Delete User-->
+                
+                  </div>
+            </div>
+        </div>    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        
+    </main>
+    <!-- footer -->
+    <%- include ('../partials/footer') %>
+    <!-- /footer -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>   
+    
+
+</body>
+</html>    

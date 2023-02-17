@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
+  <%- include ('./partials/head') %>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title > Mercado Liebre</title> 
-    <script src="https://kit.fontawesome.com/2c086df42b.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <link href='https://fonts.googleapis.com/css2? family= Roboto & display=swap' rel="stylesheet">
+   
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/estilos.css" rel="stylesheet" >
-   
+    
+    <title > Mercado Liebre</title> 
     
 </head>
 
@@ -33,7 +31,7 @@
   
     <div id="producto1">
           <div class="bordeimg">
-          <a href="/product/detail/<%= p.id %>"><img class="img01" src="imagenes/<%= p.image %>"width="200px"height="180"> </img></a>
+          <a href="/product/detail/<%= p.id %>"><img class="img01" src="imagenes/products/<%= p.image %>"width="200px"height="180"> </img></a>
         </div>
         <div class="bordeimg" id="fondo">
           <div class="camiondiv"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="camion" viewBox="0 0 16 16">
@@ -72,7 +70,7 @@
   
     <div id="producto1">
           <div class="bordeimg">
-          <a href="/product/detail"><img class="img01" src="imagenes/<%= p.image %>"width="200px"height="180"> </img></a>
+          <a href="/product/detail"><img class="img01" src="imagenes/products/<%= p.image %>"width="200px"height="180"> </img></a>
         </div>
         <div class="bordeimg" id="fondo">
           <div class="camiondiv"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="camion" viewBox="0 0 16 16">
@@ -93,83 +91,10 @@
       <br>
 
       <br>
+     
+      <%- include ('./partials/footer') %>
 
 
-<footer>
-  <div id="footer">
-     <br>
-     <div id="box-footer">
-        
-      
-      <div class="footer1">
-      <div class ="footer-icon" >
-          <i class="fa-solid fa-credit-card"></i>
-        </div>
-           
-        <h3 class="titu"> Pagá con tarjeta o efectivo 
-            
-            <p class="texto" > Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en  puntos de pago.<br> ¡Y siempre es seguro!</p>
-        </h3>
-      </div>
-      <div class="footer1">
-        <div class="footer-icon">
-            <i class="fa-solid fa-gift"></i>
-        </div>
-        
-            </span>
-        <h3 class="titu">Envío gratis desde $ 2.500 
-        <p class="texto"> Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos.<br> Es un beneficio de Mercado Puntos </p>
-        </h3>
-      </div>
-      <div class="footer1">
-        <div class="footer-icon">
-          <i class="fa-solid fa-shield"></i>
-        </div>
-                
-        <h3 class="titu">Seguridad, de principio a fin
-        <p class="texto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, <br>porque estás siempre protegid@. </p>
-        </h3>
-      </div>
-     </div>
-        <div id="footer-derecho">
-          <div class="texto-suscribirte-div">
-          <p class="texto-suscribirte">Suscribite y recibí nuestras ofertas</p>
-          <nav class="barra-correo">
-            <div class="container-fluid">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
-              </div>
-          </nav>
-        </div>
-   
-      <div class="seguinos-texto">
-          <p class="seguinos"> Seguinos en: </p>
-        </div>
-          <div class="redes-sociales">
-          <div class="redes-div">
-            <div class="ig"><a href="https://www.instagram.com/mercado.liebre_/" class="insta"><iconify-icon icon="akar-icons:instagram-fill"></iconify-icon></a></div>
-          </div>
-           <div class="redes-div">
-            <div class="fb"><a class= "facebook" href="https://www.facebook.com/MercadoLibre"><iconify-icon icon="ant-design:facebook-outlined"></iconify-icon></a></div>
-           </div>
-           <div class="redes-div">
-            <div class="tw"> <a class= "twitter" href="https://twitter.com/Mercadolibre"><iconify-icon icon="akar-icons:twitter-fill"></iconify-icon></a></div>
-           </div>
-           <div class="redes-div">
-            <div class="yt"><a class= "youtube" href="https://www.youtube.com/user/mercadolibre"><iconify-icon icon="akar-icons:youtube-fill"></iconify-icon></a></div>
-           </div>
-      
-        </div>
-        <p class="atencion-texto">Atención al cliente y Venta telefónica </p> 
-        <h3 class="numero-atencion">0810-999-(3279)</h3>
-      
-      </div>
-      
-        </div>
-      <br>
-       <p class="fin-footer">Copyright © 1999-2022 MercadoLiebre S.R.L</p>
-      </footer>
       <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 </body>
 

@@ -1,35 +1,42 @@
 [
  {
-  "id": 1,
-  "name": "Pod descartable IGNITE 1500puf",
-  "price": 4200,
-  "description": "Pod descartable ignite de muchos sabores original de 1500puff",
-  "discount": 4200
- },
- {
-  "id": 2,
-  "name": "Sal Pod nasty",
-  "price": 4200,
-  "category": "Esencias y sales",
-  "description": "sal de nasty",
-  "discount": 20,
-  "image": "pod ignite 1500puff.png"
- },
- {
   "id": 3,
-  "name": "Sal Pod nasty",
-  "price": 4200,
-  "category": "Esencias y sales",
-  "description": "sal de nasty",
-  "discount": 20,
-  "image": "pod ignite 1500puff.png"
+  "name": "teclado razer black",
+  "price": 30000,
+  "description": "teclado gamer",
+  "discount": 30000,
+  "image": "1674081239830.jpg"
  },
  {
   "id": 4,
   "name": "pendrive 500gb rojo",
-  "price": 222,
-  "description": "ffffff",
-  "discount": 222,
-  "image": "qqqqq.jpg"
+  "price": 2399,
+  "description": "pendrive ",
+  "discount": 2399,
+  "image": "1675456779732.webp"
+ },
+ {
+  "id": 5,
+  "name": "mouse razer",
+  "price": 30000,
+  "description": "mouse gamer",
+  "discount": 30000,
+  "image": "1674070890418.png"
+ },
+ {
+  "id": 6,
+  "name": "Mouse pad hyper x",
+  "price": 7000,
+  "description": "mouse pas xxl",
+  "discount": 7000,
+  "image": "1674598396436.jpg"
+ },
+ {
+  "id": 7,
+  "name": "auriculares clould 2",
+  "price": 30000,
+  "description": "auriculares hiper x",
+  "discount": 30000,
+  "image": "1674084301173.jpg"
  }
 ]

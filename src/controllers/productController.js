@@ -1,6 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 
+
+
+
 const productsFilePath = path.join(__dirname,'../data/productDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 
@@ -35,7 +38,7 @@ const productController = {
         "category": datos.category,
         "description": datos.description,
         "discount" : parseInt(datos.price),
-        "image":imagenNuevoProducto
+        "image":req.file.filename,
      }
 
      products.push(nuevoProducto)
@@ -66,28 +69,47 @@ const productController = {
 
         for (let o of products){
             if (o.id == idProducto){
+
+                var nombreImagenAntigua = o.image
                
                 o.name=datosProductos.name
                 o.price=parseInt(datosProductos.price)
                 o.category= datosProductos.category
                 o.description= datosProductos.description
                 o.discount = parseInt(datosProductos.price)
-                o.image=datosProductos.image
+                o.image =req.file.filename
                 break
   
             }
         }
         fs.writeFileSync(productsFilePath,JSON.stringify(products, null, " "), 'utf-8' )
+
+        fs.unlinkSync (__dirname +'/../../public/imagenes/products/'+ nombreImagenAntigua )
+
         res.redirect('/')
    },
    destroy: (req,res )=>{
+
     let idProductoX = req.params.id;
 
+    for (let o of products){
+        if (o.id == idProductoX){
+
+            var nombreImagenAntigua = o.image
+          
+
+            break
+
+        }
+    }
+    
     let nuevaListaProductos = products.filter(function(e){
         return e.id!= idProductoX
     
     });
+  
     fs.writeFileSync(productsFilePath,JSON.stringify(nuevaListaProductos, null, " "), 'utf-8' )
+    fs.unlinkSync (__dirname +'/../../public/imagenes/products/'+ nombreImagenAntigua )
     
     res.redirect('/')
     

@@ -1,0 +1,139 @@
+main{
+    background-color: #EAEAEA;
+}
+.nombre-foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.nombre-foto-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.nombre-foto-1{
+    max-width: 94%;
+    text-align: center;
+    margin-left: 21px;
+    
+   
+}
+
+.nombre-foto{
+    max-width: 100%;
+    text-align: left;
+    margin: 0px auto 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.nombre-foto h3{
+    margin-left: 8px;
+    
+}
+
+
+#usuario-icono{
+    font-size: 37px;
+    margin-top: 11px;
+    margin-right: 40px;
+    color: black;
+   
+}
+#usuario-icono-2{
+    font-size: 32px;
+    margin-top: 0px;
+    margin-right: 40px;
+    color: black;
+}
+
+#icono-datos{
+    font-size: 32px;
+    margin-top: -1x;
+    
+    margin-right: 42px;
+    color: black;
+   
+}
+
+
+#segunda-lista{
+    margin-top: -11px;
+   
+}
+#segunda-lista{
+    width: 80%;
+    margin: 0 auto 0;
+    background-color:white;
+    border: 1px gray solid;
+    padding: 22px;
+    border-radius: 8px;
+   
+}
+
+
+#primera-lista{
+    width: 80%;
+    height:100px;
+    margin: 0 auto 20px;
+    background-color:white;
+    border: 1px gray solid;
+    border-radius: 8px;
+  
+
+}
+#primera-lista h3{
+    
+    margin-top: 1px;
+   
+}
+#box-lista-de-opciones-datos h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 120%;
+}
+   
+.foto-perfil{
+    width: 90px;
+    height: 90px;
+    border-radius: 50% ;
+    border: solid black 4px;
+    margin-bottom: 3px;
+    
+}
+
+.nombre-perfil{
+    font-weight: bold; 
+    margin-left:18px;
+    margin-top:29px
+}
+.boton-modificar-datos{
+    text-decoration: none;
+}
+.boton-modificar-datos:hover{
+    color: black;
+    text-decoration: none;
+
+}
+.nombre-foto h3{
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 360px){
+    .nombre-perfil{
+        font-weight: bold; 
+        margin-left:10px;
+        margin-top: 24px
+    }
+    #primera-lista{
+    width: 80%;
+    height:100px;
+    margin: 0 auto 20px;
+    background-color:white;
+    border: 1px gray solid;
+    border-radius: 8px;
+  
+
+}
+}
